@@ -6,6 +6,11 @@ const readline = require('readline').createInterface({
 });
 
 // get promtpay information
+
+/**
+ * @param {String} number
+ * @param {Number} amount
+ */
 readline.question('Enter your promtpay phoneNumber : ', async number => {
     readline.question('Enter required amount : ', async amount => {
         const payload = generatePayload(number, {
@@ -16,6 +21,10 @@ readline.question('Enter your promtpay phoneNumber : ', async number => {
 });
 
 // Convert to QR Code image
+/**
+ * 
+ * @param {String} payload 
+ */
 const covertSVG = async(payload) =>{
     const options = {
         type: 'text', 
