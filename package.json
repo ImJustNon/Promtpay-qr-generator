@@ -1,0 +1,17 @@
+{
+  "name": "promptpay-qr",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "promptpay-qr": "~0.4.1",
+    "qrcode": "~0.9.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm install && node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
